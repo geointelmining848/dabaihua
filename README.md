@@ -39,9 +39,29 @@ openclaw skills install ./dabaihua --global # ~/.openclaw/skills，对所有 age
 
 Settings → Capabilities → Skills，上传本仓库的 zip（直接用 Download ZIP 下载的即可，后缀就是 .zip）。
 
+### 千问办公（QwenWork）
+
+任选其一：
+
+1. **对话式安装（最简单）**：把仓库链接发给千问办公，说一句——
+   ```
+   请帮我把 https://github.com/geointelmining848/dabaihua 下载并放到 ~/.qwenworkcn/skills/ 目录
+   ```
+   它会自动完成克隆、放置和加载。
+2. **手动上传**：左侧导航「扩展」→「技能」→「安装技能」，上传 `SKILL.md` 和 `references/` 文件夹。
+3. **手动放文件**：解压后把 `dabaihua` 文件夹放进 `~/.qwenworkcn/skills/`（Windows：`C:\Users\你的用户名\.qwenworkcn\skills\dabaihua`）。
+
+装好在对话里直接说"用大白话解释 X"，或输入 `/` 从技能列表调用。
+
 ### WorkBuddy
 
-技能管理页导入 `dabaihua.skill` 安装包。
+解压后把 `dabaihua` 文件夹复制到用户技能目录：
+
+- Windows：`C:\Users\你的用户名\.workbuddy-ai\skills\dabaihua`
+- macOS / Linux：`~/.workbuddy-ai/skills/dabaihua`
+
+（部分版本目录名为 `~/.workbuddy/skills/`，两个路径哪个存在放哪个。）
+复制后新开一个对话即可生效；如果你的版本技能管理页支持"导入"，也可以直接导入包里的 `dabaihua.skill`。
 
 ### 其他工具 / 不支持技能的聊天机器人
 
